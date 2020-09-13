@@ -2,6 +2,7 @@
 provider "aws" {
   version = "~> 3.0"
   region  = "ap-southeast-1"
+  profile = "jenkins_terraform"
 }
 
 # resource "aws_vpc" "first-vpc" {
