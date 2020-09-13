@@ -166,6 +166,7 @@ resource "aws_instance" "jenkins-server-instance" {
               sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo
               sudo rpm --import http://pkg.jenkins-ci.org/redhat-stable/jenkins-ci.org.key
               sudo yum install jenkins -y
+              sudo yum install git -y
               sudo service jenkins start
               EOF
 
