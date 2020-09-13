@@ -3,17 +3,18 @@
 ## Intro
 Terraform is great tool to quickly setup your server/infrastructure on any cloud services: AWS, Azure, Google Cloud,... This is a small example using Terraform to setup a Jenkins server on AWS EC2 asap.
 
-This setup is referenced from official document from AWS:
+This setup was followed close from official document from AWS:
+
 https://d1.awsstatic.com/Projects/P5505030/aws-project_Jenkins-build-server.pdf
 
 ## 1. Installation
-### Provide AWS credentials via `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`:
+
+### AWS Authentication:
+Provide AWS credentials via `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`
 ```
 $ export AWS_ACCESS_KEY_ID="anaccesskey"
 $ export AWS_SECRET_ACCESS_KEY="asecretkey"
-$ export AWS_DEFAULT_REGION="us-west-2"
-
-terraform plan
+$ terraform plan
 ```
 
 ### This provision will:
