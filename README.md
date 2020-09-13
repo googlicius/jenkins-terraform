@@ -1,6 +1,6 @@
 # Setup Jenkins server on a new EC2 instance with Terraform
 
-![Setup Jenkins server on a new EC2 instance with Terraform](https://bs-uploads.toptal.io/blackfish-uploads/blog/article/content/cover_image_file/cover_image/19932/cover-0226-TerraformJenkinsCICD-Waldek_Newsletter-7e4726e544fdc42fba7685f6f6149286.png)
+![Setup Jenkins server on a new EC2 instance with Terraform](https://camo.githubusercontent.com/e00ce6c84ed1a2715af9c72c77a94cbcf9a40ab8/68747470733a2f2f62732d75706c6f6164732e746f7074616c2e696f2f626c61636b666973682d75706c6f6164732f626c6f672f61727469636c652f636f6e74656e742f636f7665725f696d6167655f66696c652f636f7665725f696d6167652f31393933322f636f7665722d303232362d5465727261666f726d4a656e6b696e73434943442d57616c64656b5f4e6577736c65747465722d37653437323665353434666463343266626137363835663666363134393238362e706e67)
 
 ## Intro
 Terraform is great tool to quickly setup your server/infrastructure on any cloud services: AWS, Azure, Google Cloud,... This is a small example using Terraform to setup a Jenkins server on AWS EC2 asap.
