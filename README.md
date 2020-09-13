@@ -10,8 +10,11 @@ https://d1.awsstatic.com/Projects/P5505030/aws-project_Jenkins-build-server.pdf
 ## Prerequiresites:
 - Be sure that Terraform was installed on your machine: https://www.terraform.io/downloads.html
 - You already have an AWS account, an AWS Identity and Access Management (IAM) user name and password
+- Create an EC2 key pair: 
+Go to your AWS EC2 console and click Key Pairs on the left sidebar. Let name it `terraform_key`.
+Store it in secret location that no one knows except you.
 
-## 1. Installation
+## 1. Plan and Apply
 
 ### AWS Authentication:
 Provide AWS credentials via `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`
@@ -32,10 +35,6 @@ $ terraform plan
 7. Create a Network Interface with an IP in the Subnet that was created in step 4
 8. Assign an elastic IP to Network Inteface created in step 7
 9. Create an EC2 instance and install/enable Jenkins
-
-### Create an EC2 key pair: 
-Go to your AWS EC2 console and click Key Pairs on the left sidebar. Let name it `terraform_key` or whatever.
-Store it in secret location that no one knows except you.
 
 ### Apply provision:
 
